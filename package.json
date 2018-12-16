@@ -1,0 +1,22 @@
+{
+  "name": "keyv-react-native",
+  "version": "0.0.1",
+  "description": "A Keyv adapter for React Native's AsyncStorage module",
+  "main": "index.js",
+  "repository": "hawkrives/keyv-react-native",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "keyv",
+    "react-native"
+  ],
+  "author": "Hawken MacKay Rives <hawkrives@fastmail.fm>",
+  "license": "ISC",
+  "peerDependencies": {
+    "react-native": ">=0.16"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  }
+}
