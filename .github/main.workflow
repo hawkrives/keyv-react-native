@@ -15,8 +15,15 @@ action "Master" {
   args = "branch master"
 }
 
-action "Publish" {
+# Filter for a new tag
+action "Tag" {
   needs = "Master"
+  uses = "actions/bin/filter@master"
+  args = "tag v*"
+}
+
+action "Publish" {
+  needs = "Tag"
   uses = "actions/npm@master"
   args = "publish --access public"
   secrets = ["NPM_AUTH_TOKEN"]
